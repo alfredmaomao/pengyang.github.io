@@ -1,58 +1,56 @@
-/* styles.css */
-
 /* 基础样式 */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa;
+    color: #343a40;
 }
 
-/* 容器样式 */
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* 头部样式 */
 header {
-    background: #0073e6;
+    background: #007bff;
     color: #fff;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 header h1 {
     margin: 0;
-    font-weight: 300;
-    font-size: 2.5em;
+    font-weight: 700;
+    font-size: 3em;
 }
 
 header p {
     margin: 5px 0 0;
     font-weight: 400;
+    font-size: 1.25em;
 }
 
-/* 导航样式 */
+/* 导航栏样式 */
 nav {
-    background: #333;
-    color: #fff;
-    margin-top: -10px;
-    border-radius: 0 0 10px 10px;
+    background: #343a40;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
 }
 
 nav ul {
     padding: 0;
     list-style: none;
     text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -61,31 +59,35 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f9fa;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.1em;
 }
 
 nav ul li a:hover {
-    color: #0073e6;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
 }
 
 /* 版块样式 */
 .section {
-    padding: 40px 0;
+    padding: 60px 0;
     background: #fff;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .bg-light {
-    background: #f4f4f4;
+    background: #f8f9fa;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #0073e6;
+    margin-bottom: 30px;
+    color: #007bff;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 p {
@@ -94,14 +96,20 @@ p {
 }
 
 /* 工作经验和项目的样式 */
+.job, .project {
+    margin-bottom: 40px;
+}
+
 .job h3, .project h3 {
-    color: #0073e6;
+    color: #007bff;
     margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 .job p, .project p {
-    margin-bottom: 15px;
-    font-size: 1em;
+    margin-bottom: 10px;
+    font-size: 1.05em;
 }
 
 /* 社交图标样式 */
@@ -111,22 +119,28 @@ p {
 }
 
 .social-icons a {
-    color: #333;
-    margin: 0 10px;
-    font-size: 24px;
+    color: #343a40;
+    margin: 0 15px;
+    font-size: 30px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #0073e6;
+    color: #007bff;
 }
 
 /* 页脚样式 */
 footer {
-    background: #333;
-    color: #fff;
+    background: #343a40;
+    color: #f8f9fa;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
 }
