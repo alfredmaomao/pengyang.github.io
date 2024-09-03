@@ -8,6 +8,12 @@ body {
     color: #343a40;
 }
 
+/* 清除默认的padding和margin，避免空白框 */
+header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 85%;
     max-width: 1200px;
@@ -63,11 +69,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1em;
+    opacity: 0.8;
 }
 
 nav ul li a:hover {
     color: #007bff;
     border-bottom: 2px solid #007bff;
+    opacity: 1;
 }
 
 /* 版块样式 */
@@ -125,7 +133,7 @@ p {
     text-decoration: none;
 }
 
-.social-icons a:hover {
+social-icons a:hover {
     color: #007bff;
 }
 
