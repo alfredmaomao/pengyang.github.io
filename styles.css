@@ -1,55 +1,55 @@
 /* 基础样式 */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
-}
-
-/* 清除默认的padding和margin，避免空白框 */
-header, nav, main, footer {
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    color: #333;
 }
 
 .container {
     width: 85%;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* 头部样式 */
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 30px 0;
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    color: #1e1e1e;
+    padding: 60px 0;
     text-align: center;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px 10px 0 0;
+    background-image: url('https://plus.unsplash.com/premium_photo-1661963874418-df1110ee39c1?q=80&w=3372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
 }
 
 header h1 {
     margin: 0;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 header p {
-    margin: 5px 0 0;
-    font-weight: 400;
-    font-size: 1.25em;
+    margin: 10px 0 0;
+    font-weight: 300;
+    font-size: 1.5em;
 }
 
 /* 导航栏样式 */
 nav {
-    background: #343a40;
-    padding: 10px 0;
-    border-radius: 0 0 8px 8px;
+    background: #1e3a8a;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -61,90 +61,97 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #f8f9fa;
+    color: #1e1e1e;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.1em;
-    opacity: 0.8;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    opacity: 1;
+    color: #facc15;
+    border-bottom: 2px solid #facc15;
 }
 
 /* 版块样式 */
 .section {
     padding: 60px 0;
-    background: #fff;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.bg-light {
     background: #f8f9fa;
+    margin-bottom: 40px;
+    border-radius: 10px;
 }
 
-h2 {
+.section h2 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #007bff;
-    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #1e3a8a;
+    font-size: 2.8em;
     font-weight: 700;
 }
 
-p {
-    font-size: 1.1em;
+.section p {
+    font-size: 1.2em;
     line-height: 1.8em;
+    color: #555;
 }
 
-/* 工作经验和项目的样式 */
-.job, .project {
-    margin-bottom: 40px;
+/* 卡片样式 */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.job h3, .project h3 {
-    color: #007bff;
-    margin-bottom: 10px;
-    font-size: 1.5em;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 1.6em;
     font-weight: 600;
 }
 
-.job p, .project p {
-    margin-bottom: 10px;
-    font-size: 1.05em;
+.card p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 /* 社交图标样式 */
 .social-icons {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .social-icons a {
-    color: #343a40;
-    margin: 0 15px;
+    color: #333;
+    margin: 0 20px;
     font-size: 30px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-social-icons a:hover {
-    color: #007bff;
+.social-icons a:hover {
+    color: #1e3a8a;
 }
 
 /* 页脚样式 */
 footer {
-    background: #343a40;
-    color: #f8f9fa;
+    background: #1e3a8a;
+    color: #1e1e1e;;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 10px 10px;
 }
 
 footer p {
